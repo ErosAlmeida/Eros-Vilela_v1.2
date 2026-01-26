@@ -14,11 +14,11 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="pt-BR">
       <body className="qualquer">
-        <header>
-          <h1>Header</h1>
+        <header className="flex  justify-center items-center leading-[50px]">
+          <h1 className="italic text-blue-800">PORTIFOLIO</h1>
         </header>
 
-        <div className="bg-red-500">{children}</div>
+        <div className="text-red-800">{children}</div>
 
         <footer>
           <h1>Footer</h1>
