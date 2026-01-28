@@ -10,7 +10,6 @@ export function Header() {
 
   return (
     <header className="relative w-full bg-white border-b">
-      {/* Botão hamburger canto superior direito */}
       <div className="absolute top-4 left-6">
         <MenuButton onClick={() => setOpen(true)} />
       </div>

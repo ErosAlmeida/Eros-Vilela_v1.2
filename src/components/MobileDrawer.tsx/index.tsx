@@ -23,15 +23,15 @@ export function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
         }`}
       >
         <div className="p-6">
-          <h2 className="text-xl font-bold text-slate-800 mb-8">Portfólio</h2>
+          <h2 className="text-xl font-bold text-slate-800 mb-8">MENU</h2>
 
           <nav className="flex flex-col gap-6">
             <Link
-              href="#projects"
+              href="#init"
               onClick={onClose}
               className="text-slate-600 hover:text-blue-600 transition"
             >
-              Projetos
+              Inicio
             </Link>
 
             <Link
@@ -39,7 +39,31 @@ export function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
               onClick={onClose}
               className="text-slate-600 hover:text-blue-600 transition"
             >
-              Sobre
+              Sobre Mim
+            </Link>
+
+            <Link
+              href="#habilit"
+              onClick={onClose}
+              className="text-slate-600 hover:text-blue-600 transition"
+            >
+              Habilidades
+            </Link>
+
+            <Link
+              href="#knowledge"
+              onClick={onClose}
+              className="text-slate-600 hover:text-blue-600 transition"
+            >
+              Conhecimentos
+            </Link>
+
+            <Link
+              href="#project"
+              onClick={onClose}
+              className="text-slate-600 hover:text-blue-600 transition"
+            >
+              Meus Projetos
             </Link>
 
             <Link
@@ -48,6 +72,22 @@ export function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
               className="text-slate-600 hover:text-blue-600 transition"
             >
               Contato
+            </Link>
+
+            <Link
+              href="#language"
+              onClick={onClose}
+              className="text-slate-600 hover:text-blue-600 transition"
+            >
+              Idioma
+            </Link>
+
+            <Link
+              href="#theme"
+              onClick={onClose}
+              className="text-slate-600 hover:text-blue-600 transition"
+            >
+              Tema
             </Link>
           </nav>
         </div>
