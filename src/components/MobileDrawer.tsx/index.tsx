@@ -7,8 +7,8 @@ import {
   Code2,
   Phone,
   Languages,
-  Moon,
 } from "lucide-react";
+import { ThemeToggle } from "../ThemeToggle";
 
 type MobileDrawerProps = {
   isOpen: boolean;
@@ -28,12 +28,18 @@ export function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
 
       {/* Drawer */}
       <aside
-        className={`fixed top-0 left-0 h-full w-72 bg-slate-950 border-r border-slate-800 z-50 transform transition-transform duration-300 ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`fixed top-0 left-0 h-full w-72
+        bg-slate-50 dark:bg-slate-950
+        border-r border-slate-200 dark:border-slate-800
+        z-50 transform transition-transform duration-300
+        ${isOpen ? "translate-x-0" : "-translate-x-full"}
+      `}
       >
         <div className="p-6">
-          <h2 className="text-center text-xl font-bold text-white tracking-widest mb-10">
+          <h2
+            className="text-center text-xl font-bold tracking-widest mb-10
+            text-slate-900 dark:text-white"
+          >
             MENU
           </h2>
 
@@ -89,12 +95,7 @@ export function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
               onClose={onClose}
             />
 
-            <MenuItem
-              href="#theme"
-              icon={<Moon size={20} />}
-              label="Tema"
-              onClose={onClose}
-            />
+            <ThemeToggle />
           </nav>
         </div>
       </aside>
@@ -119,7 +120,7 @@ function MenuItem({ href, icon, label, onClose, active }: ItemProps) {
       ${
         active
           ? "bg-blue-600/20 text-blue-400"
-          : "text-slate-300 hover:bg-slate-800 hover:text-white"
+          : "text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white"
       }`}
     >
       {icon}
