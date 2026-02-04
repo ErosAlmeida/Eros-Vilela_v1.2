@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import {
   Home,
@@ -85,13 +87,6 @@ export function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
               href="#contact"
               icon={<Phone size={20} />}
               label="Contatos"
-              onClose={onClose}
-            />
-
-            <MenuItem
-              href="#language"
-              icon={<Languages size={20} />}
-              label="English"
               onClose={onClose}
             />
 

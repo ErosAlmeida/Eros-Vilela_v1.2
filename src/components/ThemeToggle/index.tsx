@@ -36,8 +36,10 @@ export function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="flex items-center gap-4 px-4 py-3 rounded-lg transition-all text-sm font-medium
-      text-slate-300 hover:bg-slate-800 hover:text-white w-full"
+      className="flex items-center gap-4 px-4 py-3 rounded-lg transition-all text-sm font-medium w-full
+      text-slate-700 dark:text-slate-300
+      hover:bg-slate-200 dark:hover:bg-slate-800
+      hover:text-slate-900 dark:hover:text-white"
     >
       {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
       {theme === "dark" ? "Tema Claro" : "Tema Escuro"}
