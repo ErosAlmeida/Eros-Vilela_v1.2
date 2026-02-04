@@ -1,7 +1,7 @@
-type LogoNameProps = {
-  children: React.ReactNode;
-};
-
-export function logoName({ children }: LogoNameProps) {
-  return <div>Eros Viela</div>;
+export function LogoName() {
+  return (
+    <div className="flex flex col">
+      <div>Eros Vilela 🚀 Portfólio</div>
+    </div>
+  );
 }
